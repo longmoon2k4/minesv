@@ -1,0 +1,663 @@
+language: vi_VN
+
+currency:
+  common-price: 1000
+  uncommon-price: 2500
+  rare-price: 5000
+  epic-price: 10000
+  legendary-price: 25000
+  mythic-price: 50000
+  divine-price: 100000
+
+slot-upgrade-costs:
+  display: 500000 # Giá mở rộng 1 ô trưng bày
+  backpack: 200000 # Giá mở rộng 1 ô balo
+
+# Enchant đặc biệt
+special-enchants:
+  luck-effect: 0.2 # % tăng tỉ lệ cá hiếm mỗi cấp
+  bait-effect: 0.2 # % tăng tốc độ cắn câu mỗi cấp
+  hook-effect: 0.5 # % tăng kích thước cá mỗi cấp
+
+event:
+  duration: 600 # Thời gian sự kiện (giây)
+  broadcast-interval: 60 # Thông báo mỗi (giây)
+  rewards:
+  - rank: 1
+    crystals: 5
+  - rank: 2
+    crystals: 3
+  - rank: 3
+    crystals: 1
+fish-types:
+  common_10:
+    name: Cá Lóc Nhỏ
+    rarity: COMMON
+    min-size: 10
+    max-size: 50
+    base-price: 10000.0
+    lore:
+    - §7Một loài cá thường thấy ở
+    - §7nhiều vùng nước ngọt.
+  divine_10:
+    name: Cá Hủy Diệt
+    rarity: DIVINE
+    min-size: 200
+    max-size: 500
+    base-price: 1000000.0
+    lore:
+    - §7Loài cá của các vị thần,
+    - §7sức mạnh vượt qua mọi giới hạn.
+  divine_8:
+    name: Cá Địa Ngục
+    rarity: DIVINE
+    min-size: 200
+    max-size: 500
+    base-price: 1000000.0
+    lore:
+    - §7Loài cá của các vị thần,
+    - §7sức mạnh vượt qua mọi giới hạn.
+  divine_9:
+    name: Cá Sáng Tạo
+    rarity: DIVINE
+    min-size: 200
+    max-size: 500
+    base-price: 1000000.0
+    lore:
+    - §7Loài cá của các vị thần,
+    - §7sức mạnh vượt qua mọi giới hạn.
+  mythic_10:
+    name: Cá Băng Giá
+    rarity: MYTHIC
+    min-size: 150
+    max-size: 400
+    base-price: 500000.0
+    lore:
+    - §7Loài cá thần thoại, sở hữu
+    - §7sức mạnh siêu nhiên khó lường.
+  divine_2:
+    name: Cá Vũ Trụ
+    rarity: DIVINE
+    min-size: 200
+    max-size: 500
+    base-price: 1000000.0
+    lore:
+    - §7Loài cá của các vị thần,
+    - §7sức mạnh vượt qua mọi giới hạn.
+  divine_3:
+    name: Cá Thời Gian
+    rarity: DIVINE
+    min-size: 200
+    max-size: 500
+    base-price: 1000000.0
+    lore:
+    - §7Loài cá của các vị thần,
+    - §7sức mạnh vượt qua mọi giới hạn.
+  divine_1:
+    name: Cá Tạo Hóa
+    rarity: DIVINE
+    min-size: 200
+    max-size: 500
+    base-price: 1000000.0
+    lore:
+    - §7Loài cá của các vị thần,
+    - §7sức mạnh vượt qua mọi giới hạn.
+  divine_6:
+    name: Cá Vĩnh Cửu
+    rarity: DIVINE
+    min-size: 200
+    max-size: 500
+    base-price: 1000000.0
+    lore:
+    - §7Loài cá của các vị thần,
+    - §7sức mạnh vượt qua mọi giới hạn.
+  divine_7:
+    name: Cá Thiên Đường
+    rarity: DIVINE
+    min-size: 200
+    max-size: 500
+    base-price: 1000000.0
+    lore:
+    - §7Loài cá của các vị thần,
+    - §7sức mạnh vượt qua mọi giới hạn.
+  divine_4:
+    name: Cá Không Gian
+    rarity: DIVINE
+    min-size: 200
+    max-size: 500
+    base-price: 1000000.0
+    lore:
+    - §7Loài cá của các vị thần,
+    - §7sức mạnh vượt qua mọi giới hạn.
+  divine_5:
+    name: Cá Hư Vô
+    rarity: DIVINE
+    min-size: 200
+    max-size: 500
+    base-price: 1000000.0
+    lore:
+    - §7Loài cá của các vị thần,
+    - §7sức mạnh vượt qua mọi giới hạn.
+  rare_1:
+    name: Cá Hồi
+    rarity: RARE
+    min-size: 30
+    max-size: 100
+    base-price: 50000.0
+    lore:
+    - §7Loài cá quý hiếm, chỉ xuất
+    - §7hiện ở một số vùng biển sâu.
+  legendary_7:
+    name: Cá Hắc Long
+    rarity: LEGENDARY
+    min-size: 100
+    max-size: 300
+    base-price: 250000.0
+    lore:
+    - §7Loài cá trong truyền thuyết,
+    - §7được coi là huyền thoại sống.
+  common_1:
+    name: Cá Mè
+    rarity: COMMON
+    min-size: 10
+    max-size: 50
+    base-price: 10000.0
+    lore:
+    - §7Một loài cá thường thấy ở
+    - §7nhiều vùng nước ngọt.
+  rare_2:
+    name: Cá Tầm
+    rarity: RARE
+    min-size: 30
+    max-size: 100
+    base-price: 50000.0
+    lore:
+    - §7Loài cá quý hiếm, chỉ xuất
+    - §7hiện ở một số vùng biển sâu.
+  legendary_6:
+    name: Cá Ngân Hà
+    rarity: LEGENDARY
+    min-size: 100
+    max-size: 300
+    base-price: 250000.0
+    lore:
+    - §7Loài cá trong truyền thuyết,
+    - §7được coi là huyền thoại sống.
+  common_2:
+    name: Cá Chép
+    rarity: COMMON
+    min-size: 10
+    max-size: 50
+    base-price: 10000.0
+    lore:
+    - §7Một loài cá thường thấy ở
+    - §7nhiều vùng nước ngọt.
+  rare_3:
+    name: Cá Song
+    rarity: RARE
+    min-size: 30
+    max-size: 100
+    base-price: 50000.0
+    lore:
+    - §7Loài cá quý hiếm, chỉ xuất
+    - §7hiện ở một số vùng biển sâu.
+  legendary_5:
+    name: Cá Thái Dương
+    rarity: LEGENDARY
+    min-size: 100
+    max-size: 300
+    base-price: 250000.0
+    lore:
+    - §7Loài cá trong truyền thuyết,
+    - §7được coi là huyền thoại sống.
+  common_3:
+    name: Cá Rô
+    rarity: COMMON
+    min-size: 10
+    max-size: 50
+    base-price: 10000.0
+    lore:
+    - §7Một loài cá thường thấy ở
+    - §7nhiều vùng nước ngọt.
+  rare_4:
+    name: Cá Vược
+    rarity: RARE
+    min-size: 30
+    max-size: 100
+    base-price: 50000.0
+    lore:
+    - §7Loài cá quý hiếm, chỉ xuất
+    - §7hiện ở một số vùng biển sâu.
+  epic_1:
+    name: Cá Mập Trắng
+    rarity: EPIC
+    min-size: 50
+    max-size: 200
+    base-price: 100000.0
+    lore:
+    - §7Loài cá cực kỳ quý hiếm,
+    - §7rất ít người từng bắt được.
+  legendary_4:
+    name: Cá Thần Tiên
+    rarity: LEGENDARY
+    min-size: 100
+    max-size: 300
+    base-price: 250000.0
+    lore:
+    - §7Loài cá trong truyền thuyết,
+    - §7được coi là huyền thoại sống.
+  legendary_9:
+    name: Cá Hỏa Long
+    rarity: LEGENDARY
+    min-size: 100
+    max-size: 300
+    base-price: 250000.0
+    lore:
+    - §7Loài cá trong truyền thuyết,
+    - §7được coi là huyền thoại sống.
+  legendary_8:
+    name: Cá Bạch Long
+    rarity: LEGENDARY
+    min-size: 100
+    max-size: 300
+    base-price: 250000.0
+    lore:
+    - §7Loài cá trong truyền thuyết,
+    - §7được coi là huyền thoại sống.
+  rare_9:
+    name: Cá Ngừ
+    rarity: RARE
+    min-size: 30
+    max-size: 100
+    base-price: 50000.0
+    lore:
+    - §7Loài cá quý hiếm, chỉ xuất
+    - §7hiện ở một số vùng biển sâu.
+  epic_6:
+    name: Cá Napoleon
+    rarity: EPIC
+    min-size: 50
+    max-size: 200
+    base-price: 100000.0
+    lore:
+    - §7Loài cá cực kỳ quý hiếm,
+    - §7rất ít người từng bắt được.
+  epic_7:
+    name: Cá Kình
+    rarity: EPIC
+    min-size: 50
+    max-size: 200
+    base-price: 100000.0
+    lore:
+    - §7Loài cá cực kỳ quý hiếm,
+    - §7rất ít người từng bắt được.
+  epic_8:
+    name: Cá Nhám
+    rarity: EPIC
+    min-size: 50
+    max-size: 200
+    base-price: 100000.0
+    lore:
+    - §7Loài cá cực kỳ quý hiếm,
+    - §7rất ít người từng bắt được.
+  epic_9:
+    name: Cá Đuôi Gai
+    rarity: EPIC
+    min-size: 50
+    max-size: 200
+    base-price: 100000.0
+    lore:
+    - §7Loài cá cực kỳ quý hiếm,
+    - §7rất ít người từng bắt được.
+  rare_5:
+    name: Cá Chẽm
+    rarity: RARE
+    min-size: 30
+    max-size: 100
+    base-price: 50000.0
+    lore:
+    - §7Loài cá quý hiếm, chỉ xuất
+    - §7hiện ở một số vùng biển sâu.
+  epic_2:
+    name: Cá Heo
+    rarity: EPIC
+    min-size: 50
+    max-size: 200
+    base-price: 100000.0
+    lore:
+    - §7Loài cá cực kỳ quý hiếm,
+    - §7rất ít người từng bắt được.
+  rare_6:
+    name: Cá Măng
+    rarity: RARE
+    min-size: 30
+    max-size: 100
+    base-price: 50000.0
+    lore:
+    - §7Loài cá quý hiếm, chỉ xuất
+    - §7hiện ở một số vùng biển sâu.
+  epic_3:
+    name: Cá Voi Xanh
+    rarity: EPIC
+    min-size: 50
+    max-size: 200
+    base-price: 100000.0
+    lore:
+    - §7Loài cá cực kỳ quý hiếm,
+    - §7rất ít người từng bắt được.
+  rare_7:
+    name: Cá Nục
+    rarity: RARE
+    min-size: 30
+    max-size: 100
+    base-price: 50000.0
+    lore:
+    - §7Loài cá quý hiếm, chỉ xuất
+    - §7hiện ở một số vùng biển sâu.
+  epic_4:
+    name: Cá Đuối
+    rarity: EPIC
+    min-size: 50
+    max-size: 200
+    base-price: 100000.0
+    lore:
+    - §7Loài cá cực kỳ quý hiếm,
+    - §7rất ít người từng bắt được.
+  legendary_10:
+    name: Cá Lôi Long
+    rarity: LEGENDARY
+    min-size: 100
+    max-size: 300
+    base-price: 250000.0
+    lore:
+    - §7Loài cá trong truyền thuyết,
+    - §7được coi là huyền thoại sống.
+  rare_8:
+    name: Cá Thu
+    rarity: RARE
+    min-size: 30
+    max-size: 100
+    base-price: 50000.0
+    lore:
+    - §7Loài cá quý hiếm, chỉ xuất
+    - §7hiện ở một số vùng biển sâu.
+  epic_5:
+    name: Cá Mặt Trăng
+    rarity: EPIC
+    min-size: 50
+    max-size: 200
+    base-price: 100000.0
+    lore:
+    - §7Loài cá cực kỳ quý hiếm,
+    - §7rất ít người từng bắt được.
+  legendary_3:
+    name: Cá Kỳ Lân
+    rarity: LEGENDARY
+    min-size: 100
+    max-size: 300
+    base-price: 250000.0
+    lore:
+    - §7Loài cá trong truyền thuyết,
+    - §7được coi là huyền thoại sống.
+  legendary_2:
+    name: Cá Phượng Hoàng
+    rarity: LEGENDARY
+    min-size: 100
+    max-size: 300
+    base-price: 250000.0
+    lore:
+    - §7Loài cá trong truyền thuyết,
+    - §7được coi là huyền thoại sống.
+  rare_10:
+    name: Cá Kiếm Nhỏ
+    rarity: RARE
+    min-size: 30
+    max-size: 100
+    base-price: 50000.0
+    lore:
+    - §7Loài cá quý hiếm, chỉ xuất
+    - §7hiện ở một số vùng biển sâu.
+  legendary_1:
+    name: Cá Rồng
+    rarity: LEGENDARY
+    min-size: 100
+    max-size: 300
+    base-price: 250000.0
+    lore:
+    - §7Loài cá trong truyền thuyết,
+    - §7được coi là huyền thoại sống.
+  mythic_4:
+    name: Cá Khổng Lồ
+    rarity: MYTHIC
+    min-size: 150
+    max-size: 400
+    base-price: 500000.0
+    lore:
+    - §7Loài cá thần thoại, sở hữu
+    - §7sức mạnh siêu nhiên khó lường.
+  mythic_3:
+    name: Cá Titan
+    rarity: MYTHIC
+    min-size: 150
+    max-size: 400
+    base-price: 500000.0
+    lore:
+    - §7Loài cá thần thoại, sở hữu
+    - §7sức mạnh siêu nhiên khó lường.
+  uncommon_1:
+    name: Cá Lóc
+    rarity: UNCOMMON
+    min-size: 20
+    max-size: 70
+    base-price: 25000.0
+    lore:
+    - §7Cá có giá trị dinh dưỡng
+    - §7cao, thường được ưa chuộng.
+  mythic_2:
+    name: Cá Hải Vương
+    rarity: MYTHIC
+    min-size: 150
+    max-size: 400
+    base-price: 500000.0
+    lore:
+    - §7Loài cá thần thoại, sở hữu
+    - §7sức mạnh siêu nhiên khó lường.
+  uncommon_2:
+    name: Cá Quả
+    rarity: UNCOMMON
+    min-size: 20
+    max-size: 70
+    base-price: 25000.0
+    lore:
+    - §7Cá có giá trị dinh dưỡng
+    - §7cao, thường được ưa chuộng.
+  mythic_1:
+    name: Cá Thần Biển
+    rarity: MYTHIC
+    min-size: 150
+    max-size: 400
+    base-price: 500000.0
+    lore:
+    - §7Loài cá thần thoại, sở hữu
+    - §7sức mạnh siêu nhiên khó lường.
+  uncommon_7:
+    name: Cá Đối
+    rarity: UNCOMMON
+    min-size: 20
+    max-size: 70
+    base-price: 25000.0
+    lore:
+    - §7Cá có giá trị dinh dưỡng
+    - §7cao, thường được ưa chuộng.
+  uncommon_8:
+    name: Cá Mú
+    rarity: UNCOMMON
+    min-size: 20
+    max-size: 70
+    base-price: 25000.0
+    lore:
+    - §7Cá có giá trị dinh dưỡng
+    - §7cao, thường được ưa chuộng.
+  uncommon_9:
+    name: Cá Hanh
+    rarity: UNCOMMON
+    min-size: 20
+    max-size: 70
+    base-price: 25000.0
+    lore:
+    - §7Cá có giá trị dinh dưỡng
+    - §7cao, thường được ưa chuộng.
+  uncommon_3:
+    name: Cá Trê
+    rarity: UNCOMMON
+    min-size: 20
+    max-size: 70
+    base-price: 25000.0
+    lore:
+    - §7Cá có giá trị dinh dưỡng
+    - §7cao, thường được ưa chuộng.
+  uncommon_4:
+    name: Cá Ngạnh
+    rarity: UNCOMMON
+    min-size: 20
+    max-size: 70
+    base-price: 25000.0
+    lore:
+    - §7Cá có giá trị dinh dưỡng
+    - §7cao, thường được ưa chuộng.
+  uncommon_5:
+    name: Cá Bống
+    rarity: UNCOMMON
+    min-size: 20
+    max-size: 70
+    base-price: 25000.0
+    lore:
+    - §7Cá có giá trị dinh dưỡng
+    - §7cao, thường được ưa chuộng.
+  uncommon_6:
+    name: Cá Kìm
+    rarity: UNCOMMON
+    min-size: 20
+    max-size: 70
+    base-price: 25000.0
+    lore:
+    - §7Cá có giá trị dinh dưỡng
+    - §7cao, thường được ưa chuộng.
+  epic_10:
+    name: Cá Bò Da
+    rarity: EPIC
+    min-size: 50
+    max-size: 200
+    base-price: 100000.0
+    lore:
+    - §7Loài cá cực kỳ quý hiếm,
+    - §7rất ít người từng bắt được.
+  common_8:
+    name: Cá Chày
+    rarity: COMMON
+    min-size: 10
+    max-size: 50
+    base-price: 10000.0
+    lore:
+    - §7Một loài cá thường thấy ở
+    - §7nhiều vùng nước ngọt.
+  common_9:
+    name: Cá Sặc
+    rarity: COMMON
+    min-size: 10
+    max-size: 50
+    base-price: 10000.0
+    lore:
+    - §7Một loài cá thường thấy ở
+    - §7nhiều vùng nước ngọt.
+  mythic_9:
+    name: Cá Sấm Sét
+    rarity: MYTHIC
+    min-size: 150
+    max-size: 400
+    base-price: 500000.0
+    lore:
+    - §7Loài cá thần thoại, sở hữu
+    - §7sức mạnh siêu nhiên khó lường.
+  common_4:
+    name: Cá Trôi
+    rarity: COMMON
+    min-size: 10
+    max-size: 50
+    base-price: 10000.0
+    lore:
+    - §7Một loài cá thường thấy ở
+    - §7nhiều vùng nước ngọt.
+  mythic_8:
+    name: Cá Quyền Năng
+    rarity: MYTHIC
+    min-size: 150
+    max-size: 400
+    base-price: 500000.0
+    lore:
+    - §7Loài cá thần thoại, sở hữu
+    - §7sức mạnh siêu nhiên khó lường.
+  common_5:
+    name: Cá Trắm
+    rarity: COMMON
+    min-size: 10
+    max-size: 50
+    base-price: 10000.0
+    lore:
+    - §7Một loài cá thường thấy ở
+    - §7nhiều vùng nước ngọt.
+  mythic_7:
+    name: Cá Huyền Bí
+    rarity: MYTHIC
+    min-size: 150
+    max-size: 400
+    base-price: 500000.0
+    lore:
+    - §7Loài cá thần thoại, sở hữu
+    - §7sức mạnh siêu nhiên khó lường.
+  common_6:
+    name: Cá Diếc
+    rarity: COMMON
+    min-size: 10
+    max-size: 50
+    base-price: 10000.0
+    lore:
+    - §7Một loài cá thường thấy ở
+    - §7nhiều vùng nước ngọt.
+  uncommon_10:
+    name: Cá Bạc Má
+    rarity: UNCOMMON
+    min-size: 20
+    max-size: 70
+    base-price: 25000.0
+    lore:
+    - §7Cá có giá trị dinh dưỡng
+    - §7cao, thường được ưa chuộng.
+  mythic_6:
+    name: Cá Vĩnh Hằng
+    rarity: MYTHIC
+    min-size: 150
+    max-size: 400
+    base-price: 500000.0
+    lore:
+    - §7Loài cá thần thoại, sở hữu
+    - §7sức mạnh siêu nhiên khó lường.
+  common_7:
+    name: Cá Mương
+    rarity: COMMON
+    min-size: 10
+    max-size: 50
+    base-price: 10000.0
+    lore:
+    - §7Một loài cá thường thấy ở
+    - §7nhiều vùng nước ngọt.
+  mythic_5:
+    name: Cá Bất Tử
+    rarity: MYTHIC
+    min-size: 150
+    max-size: 400
+    base-price: 500000.0
+    lore:
+    - §7Loài cá thần thoại, sở hữu
+    - §7sức mạnh siêu nhiên khó lường.
+# Các loại cá sẽ được tự động thêm vào đây khi plugin chạy lần đầu

@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1763071445847
+  login: 1763071028076
+money: '23754.50'
+last-account-name: SmileDev
+logoutlocation:
+  world: e8003e47-2a00-4569-a555-40604d41cc11
+  world-name: world
+  x: -217.56692307601313
+  y: 63.0
+  z: -264.3518069339061
+  yaw: 117.31198120117188
+  pitch: 72.45003509521484

@@ -7,8 +7,8 @@ Player:
 
  # default settings for all groups, all groups will take properties from this section unless player's primary group overrides a specific setting
 _DEFAULT_:
-  tabprefix: "%luckperms-prefix%"
-  tagprefix: "%luckperms-prefix%"
+  tabprefix: "&7[&r%luckperms-prefix%&7]&r "
+  tagprefix: "&7[&r%luckperms-prefix%&7]&r "
   customtabname: "%player%"
   tabsuffix: "%luckperms-suffix%"
   tagsuffix: "%luckperms-suffix%"

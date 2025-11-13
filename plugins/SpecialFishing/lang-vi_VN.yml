@@ -1,0 +1,76 @@
+help:
+  title: "§6§lHỆ THỐNG CÂU CÁ ĐẶC BIỆT"
+  toggle: "§e/cauca <bật|tắt> §7- Bật/tắt tính năng câu cá đặc biệt"
+  sell: "§e/cauca sell §7- Mở menu bán cá"
+  admin:
+    title: "§c§lLỆNH QUẢN TRỊ"
+    tileplus: "§e/cauca tileplus <id cá> <tỉ lệ> §7- Chỉnh tỉ lệ riêng cho từng loại cá"
+    tileallplus: "§e/cauca tileallplus <tỉ lệ> §7- Cộng tỉ lệ cho toàn bộ loại cá"
+    create: "§e/cauca create <id> §7- Tạo cá mới"
+    edit: "§e/cauca edit <id> §7- Chỉnh sửa cá"
+    remove: "§e/cauca remove <id> §7- Xóa cá"
+    event: "§e/cauca event <batdau|dung> §7- Bắt đầu/dừng sự kiện"
+
+fishing:
+  enabled: "§aĐã bật tính năng câu cá đặc biệt!"
+  disabled: "§cĐã tắt tính năng câu cá đặc biệt!"
+  caught: "§bBạn đã câu được §e%fish% §b- §f%rarity%"
+  rare-catch: "§6§lTHÔNG BÁO: §e%player% §6đã câu được §d%fish% §6- §5%rarity%"
+
+sell:
+  menu-title: "§6§lBán Cá"
+  instructions-title: "§aHướng dẫn bán cá"
+  instructions: "§7Bỏ cá vào ô trống để bán\n§7Khi đóng cửa sổ, cá sẽ tự động được bán\n§7Bạn sẽ nhận được tiền mặt tương ứng"
+  success: "§aBạn đã bán cá và nhận được §e%amount%"
+
+event:
+  start: "§6§lSỰ KIỆN CÂU CÁ §ađã bắt đầu! Trong 10 phút tới, hãy câu cá để nhận giải thưởng!"
+  bossbar-title: "§bSự kiện câu cá kết thúc sau: §e%time%"
+  no-catches: "§cKhông có ai câu được cá trong sự kiện này!"
+  results-title: "§6§lKẾT QUẢ SỰ KIỆN CÂU CÁ"
+  largest-fish: "§aCá lớn nhất: §e%player% §a- §b%fish% §a(§e%size%cm§a) - §f%rarity%"
+  rarest-fish: "§aCá hiếm nhất: §e%player% §a- §d%fish% §a(§e%size%cm§a) - §5%rarity%"
+  reward-message: "§aBạn đã nhận được §bThạch Thủy §atừ sự kiện câu cá!"
+  reward-name: "§bThạch Thủy"
+  reward-lore: "§7Vật phẩm quý giá từ sự kiện câu cá"
+
+admin:
+  rarity-adjusted: "§aĐã điều chỉnh tỉ lệ cá §e%fish% §athành §6%multiplier%"
+  all-rarity-adjusted: "§aĐã điều chỉnh tỉ lệ tất cả cá thành §6%multiplier%"
+  fish-created: "§aĐã tạo cá mới với ID: §e%id%"
+  edit-instruction: "§aVui lòng chỉnh sửa cá §e%id% §atrong file config.yml"
+  fish-removed: "§aĐã xóa cá với ID: §e%id%"
+  event-started: "§aĐã bắt đầu sự kiện câu cá!"
+  event-stopped: "§aĐã dừng sự kiện câu cá!"
+
+error:
+  player-only: "§cChỉ người chơi mới có thể sử dụng lệnh này!"
+  no-permission: "§cBạn không có quyền sử dụng lệnh này!"
+  usage: "§cSử dụng: %usage%"
+  fish-not-found: "§cKhông tìm thấy cá với ID: §e%id%"
+  fish-exists: "§cĐã tồn tại cá với ID: §e%id%"
+  invalid-number: "§cVui lòng nhập một số hợp lệ!"
+  save-failed: "§cKhông thể lưu cấu hình!"
+  event-already-active: "§cSự kiện đã được bật trước đó!"
+  event-not-active: "§cKhông có sự kiện nào đang diễn ra!"
+
+# Menu mới
+display:
+  menu-title: "Trưng bày cá"
+  instructions: "Kéo cá vào đây để trưng bày\nMở rộng: 500,000 VNĐ/ô"
+  upgraded: "§aĐã mở rộng rương trưng bày lên %slots% ô!"
+
+backpack:
+  menu-title: "Balo cá"
+  sell-all: "§aBán tất cả cá"
+  instructions: "Cá câu được sẽ tự động vào đây\nMở rộng: 200,000 VNĐ/ô"
+  upgraded: "§aĐã mở rộng balo lên %slots% ô!"
+
+# Enchant
+enchant:
+  received: "§aBạn đã nhận được sách %enchant%!"
+  luck-name: "§aMay Mắn"
+  bait-name: "§6Mồi Ngon"
+  hook-name: "§9Lưỡi To"
+  applied: "§aĐã áp dụng %enchant% cấp %level% vào cần câu!"
+  invalid-enchant: "§cSách enchant không hợp lệ!"

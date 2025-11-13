@@ -1,0 +1,43 @@
+{
+  "NO_PERMISSION": "&4Bạn không có quyền sử dụng lệnh này.",
+  "RELOAD_SUCCESS": "&eCấu hình của &6Coins &eđã được tải lại trong &a{0}ms&e.",
+  "MINOR_ISSUES": "&cKhi tải lại có một vài cảnh báo, kiểm tra console.",
+  "CHECK_SETTINGS": "&eBạn có thể xem cấu hình đang hoạt động bằng &f/coins settings&e.",
+  "WITHDRAW_COINS": "&eBạn đã rút &f${0} &evà nhận &f{0} xu vật phẩm&e.",
+  "NOT_THAT_MUCH": "&cBạn không thể rút nhiều tiền như vậy.",
+  "COINS_DISABLED": "&cTính năng Coins bị vô hiệu trong thế giới này.",
+  "SPAWNED_COINS": "&9Đã tạo {0} xu trong bán kính {1} quanh {2}.",
+  "REMOVED_COINS": "&9Đã xóa tổng cộng {0} xu.",
+  "INVENTORY_FULL": "&cKhông thể rút khi hành trang của bạn đã đầy.",
+
+  "PLAYER_NOT_FOUND": "&4Người chơi đó không đang trực tuyến.",
+  "COORDS_NOT_FOUND": "&4Không tìm thấy tọa độ hoặc thế giới đó.",
+
+  "INVALID_AMOUNT": "&cSố lượng không hợp lệ.",
+  "INVALID_NUMBER": "&cSố không hợp lệ.",
+  "INVALID_RADIUS": "&cBán kính không hợp lệ.",
+
+  "DROP_USAGE": "&c/coins drop <player|x,y,z[,world]> <số lượng> [bán kính]",
+  "REMOVE_USAGE": "&c/coins remove [radius|all] &7- xóa xu trong bán kính",
+  "SETTINGS_USAGE": "&c/coins settings &7- liệt kê cấu hình đang tải",
+  "RELOAD_USAGE": "&c/coins reload &7- tải lại cấu hình từ config.yml",
+  "VERSION_CHECK": "&c/coins version &7- kiểm tra phiên bản mới",
+  "WITHDRAW_USAGE": "&c/withdraw <giá_trị> [số lượng] &7- rút tiền thành xu",
+  "TOGGLE_USAGE": "&c/coins toggle &7- tắt hoặc bật Coins toàn server",
+
+  "DISABLED_REASONS": "&4Coins bị vô hiệu vì lý do sau:",
+  "CURRENTLY_INSTALLED": "&ePhiên bản hiện tại: &f{0}",
+  "LATEST_RELEASE": "&ePhiên bản mới nhất của &6Coins&e là &f{0}&e, phát hành vào &f{1}&e, mô tả: &f'{2}'&e. Hãy cân nhắc cập nhật plugin. &eTải tại: &9{3}",
+  "UP_TO_DATE": "&aBạn đang sử dụng phiên bản mới nhất {0}.",
+  "LATEST_RETRIEVE_FAIL": "&cKhông thể lấy thông tin phiên bản mới nhất của Coins.",
+
+  "ENABLED": "&ađang bật",
+  "DISABLED": "&cđã tắt",
+
+  "GLOBALLY_DISABLED_INFORM": "&eCoins hiện đang {0}&e. Đổi trạng thái bằng &f/coins toggle&e.",
+  "DISABLED_DESCRIPTION": "&eKhi tắt, xu sẽ không rơi và không thể rút xu. Tuy nhiên vẫn có thể nhặt xu đã có trên mặt đất và gửi xu vào kho.",
+  "WITHDRAWING_DISABLED": "&cRút xu đã bị vô hiệu trên server này.",
+
+  "GLOBALLY_DISABLED": "(đã tắt toàn cục)",
+  "OUTDATED": "(lỗi thời → {0})"
+}

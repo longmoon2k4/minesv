@@ -1,0 +1,47 @@
+[2025/11/14 03:57:36]: §9          __             _       
+[2025/11/14 03:57:36]: §9  _ __   / /  ___   __ _(_)_ __  
+[2025/11/14 03:57:36]: §9 | '_ \ / /  / _ \ / _` | | '_ \ 
+[2025/11/14 03:57:36]: §9 | | | / /__| (_) | (_| | | | | |
+[2025/11/14 03:57:36]: §9 |_| |_\____/\___/ \__, |_|_| |_|
+[2025/11/14 03:57:36]: §9                  |___/            
+[2025/11/14 03:57:36]: §9 By: www.nickuc.com - V 10.4.23 DEVELOPMENT
+[2025/11/14 03:57:36]: §9 
+[2025/11/14 03:57:36]: §3[nLogin] [DEBUG] The config.yml file was created successfully.
+[2025/11/14 03:57:41]: §3[nLogin] [DEBUG] All settings were loaded in 4816 ms.
+[2025/11/14 03:57:41]: §3[nLogin] [DEBUG] Loading the messages_en.yml message file...
+[2025/11/14 03:57:41]: §3[nLogin] [DEBUG] All plugin messages were loaded in 182 ms (languageByClient=false).
+[2025/11/14 03:57:41]: §3[nLogin] [DEBUG] All proxy settings were loaded in 3 ms.
+[2025/11/14 03:57:41]: §3[nLogin] [DEBUG] Loading database...
+[2025/11/14 03:57:42]: [nLogin] Generating RSA keypair... (this may take a while)
+[2025/11/14 03:57:43]: [nLogin] The RSA key pair was successfully generated. Took 1.34s
+[2025/11/14 03:57:43]: §3[nLogin] [DEBUG] Starting logger filter...
+[2025/11/14 03:58:01]: 
+[2025/11/14 03:58:01]:  §bThank you so much for choosing nLogin! §4<3
+[2025/11/14 03:58:01]: 
+[2025/11/14 03:58:01]:  §4For your safety, please read the message below:
+[2025/11/14 03:58:01]:   §cNever download nLogin from unknown sources.
+[2025/11/14 03:58:01]:   §cA modified version may contain malicious software.
+[2025/11/14 03:58:01]: 
+[2025/11/14 03:58:01]:  §3Trusted sources:
+[2025/11/14 03:58:01]:   §bwww.nickuc.com
+[2025/11/14 03:58:01]:   §bwww.github.com/nickuc
+[2025/11/14 03:58:01]:   §bOpeNLogin installer (from Spigot or GitHub)
+[2025/11/14 03:58:01]: 
+[2025/11/14 03:58:01]:  §3Official support channels:
+[2025/11/14 03:58:01]:   §bDiscord group: §fwww.nickuc.com/discord
+[2025/11/14 03:58:01]:   §bDocumentation: §fdocs.nickuc.com/nlogin/
+[2025/11/14 03:58:01]:   §bEmail: §fsupport@nickuc.com
+[2025/11/14 03:58:01]:   §bYouTube: §fyoutube.com/nickuc
+[2025/11/14 03:58:01]: 
+[2025/11/14 03:58:01]:  §eTo remove this warning, log in with "nlogin.admin" permission on the server
+[2025/11/14 03:58:01]:  §eand click the "Setup plugin" button to configure your plugin.
+[2025/11/14 03:58:01]: 
+[2025/11/14 04:00:28]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "INSERT INTO `nlogin` (`last_name`, `unique_id`, `mojang_id`, `bedrock_id`, `password`, `last_ip`, `creation_date`, `last_seen`, `email`, `discord`, `settings`) VALUES ('SmileDev', b6a0a34039a3383e9040132a79745be3, null, null, '$2a$10$mKVebF9NVdlIxk14N190LuYUkQEMrczZA7lIoAUljWMLmDHysicU2', '127.0.0.1', '2025-11-14 04:00:27.701', '2025-11-14 04:00:27.701', null, null, '{"settings":[{"value":true,"key":"force-invalid-session"}],"version":0}')" (applied to all columns)
+[2025/11/14 04:00:29]: [nLogin] The user SmileDev has successfully registered.
+[2025/11/14 04:07:56]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'SmileDev', `unique_id` = b6a0a34039a3383e9040132a79745be3,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$mKVebF9NVdlIxk14N190LuYUkQEMrczZA7lIoAUljWMLmDHysicU2', `last_ip` = '127.0.0.1', `creation_date` = 2025-11-14 04:00:27.701, `last_seen` = 2025-11-14 04:07:44.35, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":true,"key":"force-invalid-session"},{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 1" (applied to [last_seen, settings] columns)
+[2025/11/14 04:09:31]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'SmileDev', `unique_id` = b6a0a34039a3383e9040132a79745be3,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$mKVebF9NVdlIxk14N190LuYUkQEMrczZA7lIoAUljWMLmDHysicU2', `last_ip` = '127.0.0.1', `creation_date` = 2025-11-14 04:00:27.701, `last_seen` = 2025-11-14 04:09:31.186, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 1" (applied to [last_ip, last_seen, settings] columns)
+[2025/11/14 04:09:31]: [nLogin] The user SmileDev has successfully logged in.
+[2025/11/14 04:18:52]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'SmileDev', `unique_id` = b6a0a34039a3383e9040132a79745be3,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$mKVebF9NVdlIxk14N190LuYUkQEMrczZA7lIoAUljWMLmDHysicU2', `last_ip` = '127.0.0.1', `creation_date` = 2025-11-14 04:00:27.701, `last_seen` = 2025-11-14 04:18:51.659, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 1" (applied to [last_seen, settings] columns)
+[2025/11/14 04:24:00]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'SmileDev', `unique_id` = b6a0a34039a3383e9040132a79745be3,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$mKVebF9NVdlIxk14N190LuYUkQEMrczZA7lIoAUljWMLmDHysicU2', `last_ip` = '127.0.0.1', `creation_date` = 2025-11-14 04:00:27.701, `last_seen` = 2025-11-14 04:24:00.638, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"en","key":"language"}],"version":0}' WHERE `ai` = 1" (applied to [last_ip, last_seen, settings] columns)
+[2025/11/14 04:24:00]: [nLogin] The user SmileDev has successfully logged in.
+[2025/11/14 04:54:48]: [nLogin] Successful plugin core shutdown (took 0.02s)

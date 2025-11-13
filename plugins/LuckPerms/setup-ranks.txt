@@ -1,0 +1,49 @@
+# LuckPerms rank setup — paste these in server console (or run in-game as an operator)
+# Create groups
+lp creategroup owner
+lp creategroup admin
+lp creategroup mod
+lp creategroup helper
+lp creategroup builder
+lp creategroup vip
+lp creategroup default
+
+# Weights (higher = higher rank)
+lp group owner setweight 100
+lp group admin setweight 90
+lp group mod setweight 80
+lp group helper setweight 70
+lp group builder setweight 60
+lp group vip setweight 50
+lp group default setweight 10
+
+# Prefixes (clean labels; brackets added by chat/TAB configs)
+lp group owner meta setprefix "&4&lCHỦ SỞ HỮU"
+lp group admin meta setprefix "&c&lADMIN"
+lp group mod meta setprefix "&6&lMOD"
+lp group helper meta setprefix "&e&lHELPER"
+lp group builder meta setprefix "&a&lBUILDER"
+lp group vip meta setprefix "&b&lVIP"
+lp group default meta setprefix "&7&lTÂN THỦ"
+
+# Inheritance chain (higher ranks inherit lower rank permissions)
+lp group admin parent add mod
+lp group mod parent add helper
+lp group owner parent add admin
+
+# Make 'default' the server's default group for new players
+lp setdefaultgroup default
+
+# Grant basic TPA permissions to the default group so every player can use teleport requests
+lp group default permission set essentials.tpa true
+lp group default permission set essentials.tpaccept true
+lp group default permission set essentials.tpdeny true
+
+# TIP: Add your permissions as needed, for example:
+# lp group helper permission set essentials.tpa true
+# lp group vip permission set essentials.hat true
+# lp group builder permission set worldedit.* true
+# ...
+
+# After finishing, reload TAB to apply placeholder mapping
+# /tab reload

@@ -1,0 +1,92 @@
+# LuckPerms — Recommended permissions by group
+# Paste these commands into the server console (or run in-game as OP).
+# NOTES:
+# - Plugin permission nodes vary by plugin/version. Adjust nodes to match your installed plugins.
+# - Use `lp editor` for big changes (safe, atomic). Avoid giving '*' to non-owner accounts.
+
+########################
+# DEFAULT (regular players)
+########################
+# Basic movement / info / social / economy
+lp group default permission set essentials.spawn true
+lp group default permission set essentials.home true
+lp group default permission set essentials.sethome true
+lp group default permission set essentials.tpa true
+lp group default permission set essentials.tpaccept true
+lp group default permission set essentials.tpdeny true
+lp group default permission set essentials.msg true
+lp group default permission set essentials.balance true
+lp group default permission set essentials.pay true
+lp group default permission set essentials.list true
+lp group default permission set essentials.help true
+lp group default permission set coins.balance true
+lp group default permission set coins.pay true
+
+########################
+# VIP (perk group — inherits DEFAULT)
+########################
+lp group vip parent add default
+# VIP perks (examples — adjust to your plugins)
+lp group vip permission set essentials.hat true
+lp group vip permission set essentials.kits.vip true
+lp group vip permission set essentials.feed true
+lp group vip permission set essentials.heal true
+lp group vip permission set tab.vip true
+
+########################
+# BUILDER (building tools)
+########################
+lp group builder parent add default
+# Give WorldEdit / building tools (be cautious: powerful nodes)
+lp group builder permission set worldedit.* true
+lp group builder permission set tab.builder true
+
+########################
+# HELPER (moderation helpers)
+########################
+lp group helper parent add default
+lp group helper permission set essentials.kick true
+lp group helper permission set essentials.mute true
+lp group helper permission set essentials.jail true
+lp group helper permission set essentials.see true
+lp group helper permission set tab.staff true
+lp group helper permission set essentials.socialspy true
+
+########################
+# MOD (moderators)
+########################
+lp group mod parent add helper
+lp group mod permission set essentials.ban true
+lp group mod permission set essentials.banip true
+lp group mod permission set essentials.tempban true
+lp group mod permission set essentials.kick true
+lp group mod permission set essentials.mute true
+lp group mod permission set essentials.jail true
+lp group mod permission set tab.staff true
+
+########################
+# ADMIN (server admins)
+########################
+# Admins get broad Essentials rights but NOT global '*' by default (use with caution)
+lp group admin parent add mod
+lp group admin permission set essentials.* true
+lp group admin permission set tab.* true
+lp group admin permission set luckperms.group.* false
+
+########################
+# OWNER (server owner)
+########################
+# Owner gets everything (use only for actual server owners)
+lp group owner permission set "*" true
+
+########################
+# Extra notes
+########################
+# - If you prefer inheritance instead of repeating nodes, add parents like above.
+# - To make some permissions temporary use 'addtemp', e.g.:
+#   lp user <player> permission settemp essentials.fly true 1d
+# - To remove a permission: lp group <group> permission unset <node>
+# - To remove parent: lp group <group> parent remove <parent>
+# - Use `lp user <player> info` to verify final permissions.
+
+# End of file
